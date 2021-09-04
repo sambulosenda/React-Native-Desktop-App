@@ -1,0 +1,41 @@
+{
+  "name": "macosapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "macos": "react-native-macos run-macos",
+    "macos:install": "cd macos && pod install",
+    "nuke": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn && yarn start --reset-cache"
+  },
+  "dependencies": {
+    "axios": "^0.21.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "mobx": "^6.3.3",
+    "mobx-react-lite": "^3.2.1",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-macos": "^0.63.0-0",
+    "tailwind-rn": "^3.0.1",
+    "tailwindcss": "^2.2.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/react": "^17.0.19",
+    "@types/react-native": "^0.64.13",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
