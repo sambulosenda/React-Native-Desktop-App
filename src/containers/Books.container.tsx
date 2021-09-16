@@ -36,7 +36,7 @@ export const Books = observer((props: IProps) => {
 
         <TouchableOpacity
           onPress={() => root.ui.addBook(title)}
-          style={tw('bg-tangerine text-white justify-center p-3 ')}>
+          style={tw('bg-tangerine text-white justify-center p-2 rounded ml-2 w-32')}>
           <Text style={tw('text-white')}>Add Button</Text>
         </TouchableOpacity>
       </View>
